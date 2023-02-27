@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8">
+        <title>Siouyu's Bio</title>
+        <link rel="stylesheet" type="text/css" href="0. 自介.css"/>
+
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <div class="title";>Siouyu's Resume</div>
+        
+        <div class="mobile-menu"
+            onmousedown="down(this);" onmouseup="up(this);"
+            onclick="changeToBtn()">
+            <img src="menu.png" width="30" height="30"/>
+            
+        </div>
+
+        <div class="frame">  
+            <div class="btnmiddle"> 
+                <div
+                    class="btn";
+                    onmouseover="over(this);" onmouseout="out(this);"
+                    onmousedown="down(this);" onmouseup="up(this);"
+                    onclick="changeToAbout()"
+                    >關於我
+                </div>
+
+                <div
+                    class="btn";
+                    onmouseover="over(this);" onmouseout="out(this);"
+                    onmousedown="down(this);" onmouseup="up(this);"
+                    onclick="changeToEd()"
+                >學經歷</div>
+
+                <div 
+                    class="btn";
+                    onmouseover="over(this);" onmouseout="out(this);"
+                    onmousedown="down(this);" onmouseup="up(this);"
+                    onclick="changeToMine()"
+                >自我學習</div>
+
+                <div class="link">
+                    <div class="fb" style="margin-right:10px">
+                        <a href="https://www.facebook.com/hsuhsiuyu/" target="_blank"><img src="FB.png" width="25" height="25"/></a>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/siouyu" target="_blank"><img src="github.png" width="25" height="25"/></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line"></hr>
+
+            <div class="content">
+                <div id="About">
+                    <h2>姓名：</h2>許秀瑜 Hsu Siouyu<br/>
+                    <h2>手機號碼：</h2>0975 378 316<br/>
+                    <h2>Email：</h2>hsiuyu160@gmail.com<br/>
+                    <br/>
+                </div>
+
+                <div id="Ed" style="display:none">
+                    <h2>學歷：</h2>
+                    國立中央大學 客家語文暨社會科學學系 學士（2013 – 2017）<br/>
+                    <br/>
+                    <h2>工作經驗：</h2>
+                    <b>幔室布緹有限公司｜行銷專員</b>（2021.5 – ）<br/>
+                    • 內容 SEO 優化：關鍵字研究／持續內容創作已累積50篇以上文章／WordPress 文章頁設計排版<br/>
+                    • 技術 SEO 分析：GA流量追蹤分析／持續優化檢查使用者體驗網頁<br/>
+                    • 社群媒體經營：持續吸收新知，能快速學習並調整貼文發布政策<br/>
+                    • KOL 異業合作：清晰表達能力，能完整說明並協調雙方需求<br/>
+                    <br/>
+                    <b>富富．小山岡 桃園富岡地方創生基地｜在地經理人</b>（2020.8 – 2021.4）<br/>
+                    • 迅速理解並掌握客戶（在地居民／政府機關）個別需求<br/>
+                    • 協調並整合多方意見，優化溝通過程<br/>
+                    • 具企劃書撰寫與提案能力<br/>
+                    <br/>
+                    <b>私人家教｜高中英文／國中史地／國小伴讀</b>（2019.11 – 2022.5）<br/>
+                    • 清晰有邏輯的口語表達 <br/>
+                    • 資料收集統整與文字編排能力<br/>
+                    • 將知識化繁為簡，耐心使客戶充分理解內容<br/>
+                    <br/>
+                    <b><a href="https://www.facebook.com/HOLOtea" target="_blank">HOLOthé</a> 展演空間咖啡廳｜店長</b>（2017.06 – 2019.07）<br/>
+                    • 細心觀察客戶需求並主動提供服務<br/>
+                    • 專案企劃執行與流程優化<br/>
+                    <br/>
+                </div>
+
+                <div id="Mine" style="display:none">
+                    <h2>語言學習：持續精進</h2>
+                    <b>西語</b><br/>
+                    零基礎完成 Lingoda 西語馬拉松（2019.9 – 2019.12） <br/>
+                    • 完成連續90天、每日1小時與母語人士進行口語對話<br/>
+                    • 持續於 Amazing Talker 上尋找外師精進西文能力<br/>
+                    • 自行尋找線上免費資源 <a href="https://www.Spanishdict.com/" target="_blank">Spanishdict</a> 進行學習<br/>
+                    <br/>
+                    <b>英文</b><br/>
+                    VoiceTube Hero 零元挑戰成功 （2020.8 – 2022.12）<br/>
+                    • 期間每日1小時進行線上英文課程<br/>
+                    <br/>
+                    <h2>獨自旅行：突破舒適圈</h2>
+                    中南美自助背包客旅行：加拿大／古巴／秘魯／智利／馬來西亞（2019.07 - 2019.9）<br/>
+                    • 持續挑戰新鮮事物的勇氣<br/>
+                    • 能冷靜應變突發情況<br/>
+                    • 行程及機票皆自行打理，能有效控管、安排自己的時間<br/>
+                    <br/>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function over(elem){
+                elem.style.backgroundColor="#009100";
+            }
+            function out(elem){
+                elem.style.backgroundColor="MediumSeaGreen";
+            }
+            function down(elem){
+                elem.style.fontWeight="bold";
+            }
+            function up(elem){
+                elem.style.fontWeight="normal";
+            }
+            function changeToAbout(){
+                let AboutDiv=document.querySelector("#About");
+                let EdDiv=document.querySelector("#Ed");
+                let MineDiv=document.querySelector("#Mine");
+                let MiddleDiv=document.querySelector(".btnmiddle");
+                AboutDiv.style.display="block";
+                EdDiv.style.display="none";
+                MineDiv.style.display="none";
+                if(window.innerWidth<500){
+                    MiddleDiv.style.display="none";
+                }
+            }
+            function changeToEd(){
+                let AboutDiv=document.querySelector("#About");
+                let EdDiv=document.querySelector("#Ed");
+                let MineDiv=document.querySelector("#Mine");
+                let MiddleDiv=document.querySelector(".btnmiddle");
+                AboutDiv.style.display="none";
+                EdDiv.style.display="block";
+                MineDiv.style.display="none";
+                if(window.innerWidth<500){
+                    MiddleDiv.style.display="none";
+                }
+            }
+            function changeToMine(){
+                let AboutDiv=document.querySelector("#About");
+                let EdDiv=document.querySelector("#Ed");
+                let MineDiv=document.querySelector("#Mine");
+                let MiddleDiv=document.querySelector(".btnmiddle");
+                AboutDiv.style.display="none";
+                EdDiv.style.display="none";
+                MineDiv.style.display="block";
+                if(window.innerWidth<500){
+                    MiddleDiv.style.display="none";
+                }
+            }
+            function changeToBtn(){
+                let AboutDiv=document.querySelector("#About");
+                let EdDiv=document.querySelector("#Ed");
+                let MineDiv=document.querySelector("#Mine");
+                let MiddleDiv=document.querySelector(".btnmiddle");
+                AboutDiv.style.display="none";
+                EdDiv.style.display="none";
+                MineDiv.style.display="none";
+                MiddleDiv.style.display="block";
+            }
+        </script>
+    </body>
+</html>
