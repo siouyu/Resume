@@ -1,7 +1,8 @@
-let AboutDiv=document.querySelector("#About");
-let EdDiv=document.querySelector("#Ed");
-let MineDiv=document.querySelector("#Mine");
-let MiddleDiv=document.querySelector(".btnmiddle");
+const AboutDiv=document.querySelector("#About");
+// const是不能更改宣告（最嚴格的宣告，位階比let高）
+const EdDiv=document.querySelector("#Ed");
+const MineDiv=document.querySelector("#Mine");
+const MiddleDiv=document.querySelector(".btnmiddle");
 
 function over(elem){
     elem.style.backgroundColor="#009100";
